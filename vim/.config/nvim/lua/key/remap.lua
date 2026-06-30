@@ -1,8 +1,7 @@
 print("Lua Remappings loaded")
 
 vim.g.mapleader = " "
---
--- Shortcut functions
+
 function map(mode, shortcut, command)
   vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true })
 end
@@ -17,8 +16,6 @@ end
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-
--- lsp
 local opts = { noremap = true, silent = true }
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)

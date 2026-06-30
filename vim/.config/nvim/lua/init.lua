@@ -12,7 +12,4 @@ require('packages.secondone')
 require('packages.codex')
 print("Lua init loaded")
 
--- Extra settings
 vim.wo.relativenumber = true
-
---

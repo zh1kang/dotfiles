@@ -1,19 +1,10 @@
 export PATH="$HOME/ngrok:$PATH"
 
-# Added by Windsurf
+# Windsurf
 export PATH="/Users/caleb/.codeium/windsurf/bin:$PATH"
 
-# Added by Windsurf
-export PATH="/Users/caleb/.codeium/windsurf/bin:$PATH"
-
-# bun completions
+# Bun
 [ -s "/Users/caleb/.bun/_bun" ] && source "/Users/caleb/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
@@ -35,20 +26,20 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-# Added by Antigravity
+# Antigravity
 export PATH="/Users/caleb/.antigravity/antigravity/bin:$PATH"
 
-# opencode
+# OpenCode
 export PATH=/Users/caleb/.opencode/bin:$PATH
 
-# Start tmux automatically for interactive Ghostty shells.
+# Auto-start tmux in Ghostty.
 if [[ $- == *i* ]] && [[ -z "${TMUX:-}" ]] && [[ "${TERM_PROGRAM:-}" == "ghostty" || "${TERM:-}" == xterm-ghostty* ]]; then
   if command -v tmux >/dev/null; then
     exec tmux new-session
   fi
 fi
 
-# Show fastfetch in each fresh top-level tmux shell so new windows start with it.
+# Show fastfetch in new tmux shells.
 if [[ $- == *i* ]] && [[ -n "${TMUX:-}" ]] && [[ "${SHLVL:-1}" -eq 1 ]]; then
   if command -v fastfetch >/dev/null; then
     fastfetch --pipe false
@@ -72,7 +63,7 @@ nvim() {
   command nvim "$@"
 }
 
-# Zsh completions, autosuggestions, and syntax highlighting.
+# Zsh plugins
 if [[ -d "$HOME/.zsh/plugins/zsh-completions/src" ]]; then
   fpath=("$HOME/.zsh/plugins/zsh-completions/src" $fpath)
 fi

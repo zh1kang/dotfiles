@@ -1,19 +1,19 @@
-set nocompatible            " disable compatibility to old-time vi
+set nocompatible
 let g:python3_host_prog = expand('~/.local/share/nvim/python3-venv/bin/python')
 set guifont=PP\ Neue\ Montreal:h14
-set showmatch               " show matching brackets.
-set ignorecase              " case insensitive matching
-set mouse=v                 " middle-click paste with mouse
-set hlsearch                " highlight search results
-set autoindent              " indent a new line the same amount as the line just typed
-set number                  " add line numbers
-set wildmode=longest,list   " get bash-like tab completions
-set cc=88                   " set colour columns for good coding style
-filetype plugin indent on   " allows auto-indenting depending on file type
-set tabstop=4               " number of columns occupied by a tab character
-set expandtab               " convert tabs to white space
-set shiftwidth=4            " width for autoindents
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+set showmatch
+set ignorecase
+set mouse=v
+set hlsearch
+set autoindent
+set number
+set wildmode=longest,list
+set cc=88
+filetype plugin indent on
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set softtabstop=4
 
 let g:airline_theme = 'neutralpastel'
 
@@ -33,7 +33,7 @@ Plug 'nvim-neo-tree/neo-tree.nvim', { 'branch': 'v3.x' }
 Plug 'folke/snacks.nvim'
 Plug 'https://github.com/tpope/vim-fugitive'
 
-" LSP 
+" LSP
 Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'master' }
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
@@ -47,7 +47,7 @@ Plug 'ray-x/lsp_signature.nvim'
 Plug 'nvim-neotest/nvim-nio'
 Plug 'folke/trouble.nvim'
 
-" For vsnip users.
+" vsnip
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
@@ -60,7 +60,7 @@ Plug 'machakann/vim-highlightedyank'
 " Python
 Plug 'stevearc/conform.nvim'
 
-" Language and workflow tools from dotfiles-main
+" Workflow tools
 Plug 'ray-x/guihua.lua'
 Plug 'ray-x/go.nvim', { 'tag': 'v0.11' }
 Plug 'NoahTheDuke/vim-just'
