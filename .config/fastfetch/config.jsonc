@@ -1,0 +1,74 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "kitty-direct",
+    "source": "/Users/caleb/.config/fastfetch/logo-halftone-blue-square.png",
+    "width": 36,
+    "height": 20,
+    "padding": {
+      "right": 2
+    },
+    "preserveAspectRatio": true
+  },
+  "display": {
+    "separator": " : ",
+    "color": {
+      "keys": "#8FB4FF",
+      "title": "#BDBDBD",
+      "output": "#BDBDBD",
+      "separator": "#7B7B7B"
+    },
+    "temp": {
+      "color": {
+        "green": "#7CCF9E",
+        "yellow": "#F2C078",
+        "red": "#FF6B7A"
+      }
+    },
+    "percent": {
+      "color": {
+        "green": "#7CCF9E",
+        "yellow": "#F2C078",
+        "red": "#FF6B7A"
+      }
+    },
+    "bar": {
+      "color": {
+        "elapsed": "#3619CC",
+        "total": "#1D1D1D",
+        "border": "#7B7B7B"
+      }
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}
