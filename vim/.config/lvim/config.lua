@@ -1,6 +1,7 @@
 vim.opt.relativenumber = true
 lvim.log.level = "warn"
 lvim.format_on_save = true
+lvim.colorscheme = "gruvbox"
 
 lvim.lsp.buffer_mappings.normal_mode['K'] = nil
 lvim.keys.normal_mode['K'] = "<Cmd>echo Okay!<CR>"
@@ -16,6 +17,9 @@ lvim.keys.normal_mode["|"] = ":vsplit<CR>"
 lvim.keys.normal_mode["-"] = ":split<CR>"
 
 lvim.plugins = {
+  {
+    "ellisonleao/gruvbox.nvim",
+  },
   {
     "sphamba/smear-cursor.nvim",
     opts = {},
