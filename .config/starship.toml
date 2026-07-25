@@ -1,0 +1,76 @@
+add_newline = false
+command_timeout = 1000
+palette = "gruvbox_dark"
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$rust\
+$golang\
+$cmd_duration\
+$line_break\
+$character"""
+
+[palettes.gruvbox_dark]
+bg0 = "#1d2021"
+bg1 = "#282828"
+bg2 = "#3c3836"
+fg0 = "#fbf1c7"
+fg1 = "#ebdbb2"
+gray = "#928374"
+red = "#fb4934"
+green = "#b8bb26"
+yellow = "#fabd2f"
+blue = "#83a598"
+purple = "#d3869b"
+aqua = "#8ec07c"
+orange = "#fe8019"
+
+[directory]
+style = "bold fg:yellow"
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+symbol = " "
+style = "bold fg:green"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "fg:orange"
+format = "([$all_status$ahead_behind]($style) )"
+conflicted = "!"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+stashed = "≡${count}"
+modified = "~${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
+
+[character]
+success_symbol = "[❯](bold fg:green)"
+error_symbol = "[❯](bold fg:red)"
+vimcmd_symbol = "[❮](bold fg:aqua)"
+
+[cmd_duration]
+min_time = 1000
+style = "fg:gray"
+format = "[$duration]($style) "
+
+[nodejs]
+format = "[$symbol($version )](fg:green)"
+
+[python]
+format = "[$symbol($version )](fg:yellow)"
+
+[rust]
+format = "[$symbol($version )](fg:orange)"
+
+[golang]
+format = "[$symbol($version )](fg:aqua)"
